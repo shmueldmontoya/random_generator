@@ -16,7 +16,7 @@ function ejecutar(){
 		texto = texto.replace(/d/g,'¥');
 		texto = texto.replace(/e/g,'¦');
 		texto = texto.replace(/f/g,'§');
-		texto = texto.replace(/g/g,'¿');
+		texto = texto.replace(/g/g,'►');
 		texto = texto.replace(/h/g,'©');
 		texto = texto.replace(/i/g,'ª');
 		texto = texto.replace(/j/g,'«');
@@ -44,7 +44,7 @@ function ejecutar(){
 		texto = texto.replace(/D/g,'¥^');
 		texto = texto.replace(/E/g,'¦^');
 		texto = texto.replace(/F/g,'§^');
-		texto = texto.replace(/G/g,'¿^');
+		texto = texto.replace(/G/g,'►^');
 		texto = texto.replace(/H/g,'©^');
 		texto = texto.replace(/I/g,'ª^');
 		texto = texto.replace(/J/g,'«^');
@@ -102,7 +102,7 @@ function ejecutar(){
 		texto = texto.replace(/¥\^/g,'D');
 		texto = texto.replace(/¦\^/g,'E');
 		texto = texto.replace(/§\^/g,'F');
-		texto = texto.replace(/¿\^/g,'G');
+		texto = texto.replace(/►\^/g,'G');
 		texto = texto.replace(/©\^/g,'H');
 		texto = texto.replace(/ª\^/g,'I');
 		texto = texto.replace(/«\^/g,'J');
@@ -130,7 +130,7 @@ function ejecutar(){
 		texto = texto.replace(/¥/g,'d');
 		texto = texto.replace(/¦/g,'e');
 		texto = texto.replace(/§/g,'f');
-		texto = texto.replace(/¿/g,'g');
+		texto = texto.replace(/►/g,'g');
 		texto = texto.replace(/©/g,'h');
 		texto = texto.replace(/ª/g,'i');
 		texto = texto.replace(/«/g,'j');
