@@ -165,3 +165,28 @@ function copiar(){
 document.getElementById("input").addEventListener("input", ejecutar);
 document.getElementById("button--copy").addEventListener("click", copiar);
 document.getElementById("button--clear").addEventListener("click", limpiar);
+
+
+// codigo para descargar el texto del usuario
+function download(filename, text) {
+	let element = document.createElement('a');
+	element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+	element.setAttribute('download', filename);
+
+	element.style.display = 'none';
+	document.body.appendChild(element);
+
+	element.click();
+
+	document.body.removeChild(element);
+}
+
+document.getElementById("dwn-btn").addEventListener("click", descarga);
+function descarga(){
+	let text = document.getElementById("output").value;
+	let filename = "texto.txt";
+	
+	if(text !== ""){
+		download(filename, text);
+	}
+}
