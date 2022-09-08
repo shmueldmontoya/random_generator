@@ -183,8 +183,9 @@ function download(filename, text) {
 
 document.getElementById("dwn-btn").addEventListener("click", descarga);
 function descarga(){
+	let file = prompt("Escribe un nombre para el archivo");
 	let text = document.getElementById("output").value;
-	let filename = "texto.txt";
+	let filename = file;
 	
 	if(text !== ""){
 		download(filename, text);
