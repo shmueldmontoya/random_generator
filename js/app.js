@@ -191,3 +191,24 @@ function descarga(){
 	}
 }
 
+// funcion para cargar archivo
+
+function abrirArchivo(evento){
+	let archivo = evento.target.files[0];
+
+	if (archivo){
+			let reader = new FileReader();
+
+			reader.onload = function(e) {
+					let contenido = e.target.result;
+
+					document.getElementById('input').innerText = contenido;
+			};
+
+			reader.readAsText(archivo);
+	}
+}
+
+window.addEventListener('load', () => {
+	document.getElementById('archivoTexto').addEventListener('change', abrirArchivo);
+});

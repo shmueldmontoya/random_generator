@@ -94,6 +94,12 @@ body {
 	grid-column-start: 5;
 	grid-column-end: 7;
 }
+.archivoTexto {
+	display: flex;
+	grid-row: 5;
+	grid-column-start: 5;
+	grid-column-end: 7;
+}
 
 @media screen and (max-width: 500px) {
 	.textarea__input {
@@ -122,6 +128,12 @@ body {
 	}
 	.button--download {
 		grid-row: 5;
+		grid-column-start: 2;
+		grid-column-end: 10;
+	}
+	.archivoTexto {
+		display: flex;
+		grid-row: 6;
 		grid-column-start: 2;
 		grid-column-end: 10;
 	}
@@ -154,6 +166,12 @@ body {
 	}
 	.button--download {
 		grid-row: 6;
+		grid-column-start: 2;
+		grid-column-end: 10;
+	}
+	.archivoTexto {
+		display: flex;
+		grid-row: 7;
 		grid-column-start: 2;
 		grid-column-end: 10;
 	}
