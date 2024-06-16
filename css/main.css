@@ -82,7 +82,6 @@ body {
 .button--clear {
 	grid-row: 3;
 	grid-column-end: 6;
-	/*justify-self: end;*/  /*     <---- no sé para qué hice eso, entonces lo comenté */
 }
 .button--copy {
 	grid-row: 3;
@@ -102,7 +101,7 @@ body {
 	display: none;
 }
 .archivoTexto {
-	display: none; /* Ocultar el input original */
+	display: none;
 }
 
 @media screen and (max-width: 500px) {
